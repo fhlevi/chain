@@ -26,7 +26,7 @@
                 </a>
             </div>
         </div>
-        <div class="column row-desktop svelte-1ykiyx9">
+        <div class="column social-media row-desktop svelte-1ykiyx9">
             <div class="socials row centered svelte-1ykiyx9">
                 <a v-for="(item, index) in socialMedia" :key="index" :href="item.link" target="_blank" class="svelte-1ykiyx9 social-icon">
                     <i :class="item.icon"></i>

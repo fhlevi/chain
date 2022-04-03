@@ -357,7 +357,7 @@ footer.svelte-1ykiyx9.svelte-1ykiyx9.svelte-1ykiyx9 {
 
 footer.svelte-1ykiyx9 .socials.svelte-1ykiyx9.svelte-1ykiyx9 {
     --grid-gap: 4rem;
-    height: 20px !important;
+    /* height: 20px !important; */
 }
 
 footer.svelte-1ykiyx9 .row-desktop.svelte-1ykiyx9.svelte-1ykiyx9 {
