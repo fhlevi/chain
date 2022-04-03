@@ -1,0 +1,30 @@
+#traders, #league {
+    position: relative;
+    top: 5rem;
+
+    @media only screen and (max-width: 768px) {
+        top: 0rem;
+    }
+}
+
+.title-info {
+    margin-bottom: 5rem;
+}
+
+.social-icon {
+    padding: 0px 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#tokenomics {
+    margin-top: 6rem;
+}
+#team {
+    margin-top: 5rem;
+}
+#partner {
+    margin-top: 5rem;
+}
