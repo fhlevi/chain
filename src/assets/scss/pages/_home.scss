@@ -6,7 +6,9 @@
         top: 0rem;
     }
 }
-
+img.background {
+    height: 100vh;
+}
 .social-media {
     height: 2em;
     margin-top: 1rem;
@@ -24,7 +26,7 @@
     text-decoration: none;
 }
 
-#tokenomics {
+#tokenomics, #collection {
     margin-top: 6rem;
 }
 #team {
@@ -33,3 +35,141 @@
 #partner {
     margin-top: 5rem;
 }
+
+/* tokenomics */
+.wrapper-tokenomics {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    height: auto;
+
+    .tokenomics-image {
+        width: 50%;
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    .tokenomics-list {
+        display: grid;
+        gap: 1rem;
+        grid-template-rows: auto;
+    }
+}
+.tokenomics-item {
+    min-height: 40px;
+    height: auto;
+    width: 100%;
+    max-width: 325px;
+    padding: 10px;
+    background-color: #363b69;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    span {
+        min-width: 25px;
+    }
+}
+$color-token: (
+    'red': red,
+    'green': green
+);
+.tokenomics-item-percentace {
+    height: 1.25rem;
+    min-width: 1.25rem;
+    
+    @each $name, $color in $color-token {
+        &.item-square-#{$name} {
+            background-color: $color;
+        }
+    }
+}
+
+/* collection */
+$color-collection-list: (
+    'primary': linear-gradient(0deg,rgba(148,237,240,0.17),rgba(25,43,42,0)),
+    'black': linear-gradient(0deg,#181425,transparent)
+);
+.wrapper-collection {
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+    max-height: auto;
+
+    .text-active {
+        color: #31f3e3;
+    }
+
+    .image-review {
+        padding: 0px 2.5rem;
+        justify-content: center;
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        display: flex;
+
+        .slide-image {
+            transition: 250ms;
+            opacity: 1;
+            transform: translateX(0px);
+            
+            &.hide {
+                transform: translateX(250px);
+                opacity: 0;
+            }
+        }
+
+        img {
+            height: 353px;
+            width: 275px;
+        }
+
+        .name-item {
+            font-size: clamp(1.42rem,calc(1.31rem + 0.5vw),1.76rem);
+            color: #31f3e3;
+            margin-bottom: 0.75rem;
+            margin-top: 20px;
+        }
+
+        .descript-item {
+            font-size: clamp(1.13rem,calc(1.13rem + 0vw),1.13rem);
+            color: #dddae6;
+        }
+    }
+
+    .image-review-list {
+        display: grid;
+        gap: 1.25rem;
+        width: 50%;
+        grid-template-rows: repeat(3,minmax(1fr));
+        grid-template-columns: repeat(3,minmax(0,1fr));
+
+        img {
+            max-height: 132px;
+            max-width: 132px;
+            height: 100%;
+        }
+
+        .image-review-item{
+            display: grid;
+            gap: 5px;
+            cursor: pointer;
+        
+            @each $name, $color in $color-collection-list {
+                .bg-#{$name} {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding-bottom: 10px;
+                    width: 132px;
+                    background: $color;
+                }
+            }
+        }
+    }
+}
+
+@import 'responsive/home';

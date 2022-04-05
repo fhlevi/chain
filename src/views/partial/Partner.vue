@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1 class="stack parallax-layer svelte-1ykiyx9">
-            <span class="svelte-1ykiyx9 text-center">OUR PARTNERS</span>
+            <span class="svelte-1ykiyx9 text-center text-36 font-bold">OUR PARTNERS</span>
         </h1>
         <section id="partner">
             <div class="wrapper-partner">

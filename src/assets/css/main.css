@@ -9,3 +9,6 @@
 @import 'style.css';
 @import 'responsive.css';
 @import '../awesome/css/all.min.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

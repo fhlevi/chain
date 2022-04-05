@@ -12,7 +12,7 @@
                 <img :src="require('Assets/images/items/5.png')" class="svelte-1ykiyx9">
             </span>
         </figure>
-        <h1 class="stack parallax-layer svelte-1ykiyx9">
+        <h1 class="stack font-bold parallax-layer svelte-1ykiyx9">
             <span class="svelte-1ykiyx9">INI TEST BUILD WEB</span>
         </h1>
         <p class="description parallax-layer svelte-1ykiyx9">
@@ -22,7 +22,7 @@
         <div class="buttons stack parallax-layer svelte-1ykiyx9">
             <div class="row svelte-1ykiyx9">
                 <a href="#" class="svelte-1ykiyx9">
-                    <button type="" class=" primary large ">Open App</button>
+                    <button class="btn-open-app bg-primary large">Open App</button>
                 </a>
             </div>
         </div>

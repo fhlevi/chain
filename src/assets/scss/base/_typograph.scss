@@ -1,0 +1,11 @@
+.ellipsis-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@for $font-size from 1 through 50{
+    .text-#{$font-size}{
+        font-size: REM($font-size);
+    }
+}

@@ -1,7 +1,7 @@
 <template>
     <div id="roadmap">
         <h1 class="stack parallax-layer svelte-1ykiyx9">
-            <span class="svelte-1ykiyx9 text-center" style="text-align: center">ROADMAP</span>
+            <span class="svelte-1ykiyx9 text-center text-36 font-bold">ROADMAP</span>
         </h1>
         <section id="cd-timeline" class="cd-container">
             <div class="cd-timeline-block" v-for="(item, index) in roadmapList" :key="index">

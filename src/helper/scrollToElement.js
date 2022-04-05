@@ -76,7 +76,7 @@ const moveWindowScroll = (element,duration)=>{
 }
 
 
-const scollToElement = (elTarget, duration, elScrollingDiv)=>{
+const scrollToElement = (elTarget, duration, elScrollingDiv)=>{
   if( elScrollingDiv){
     moveDivScroll(elTarget, duration, elScrollingDiv)
   }else{
@@ -92,6 +92,6 @@ export const smoothScroll = top => {
 }
 
 export default {
-  scollToElement,
+  scrollToElement,
   smoothScroll
 }

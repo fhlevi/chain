@@ -1,0 +1,7 @@
+@function REM($size){
+    $UNIT-OF-REM: 16;
+
+    $rem-size: ($size / $UNIT-OF-REM) + rem;
+
+    @return $rem-size;
+}

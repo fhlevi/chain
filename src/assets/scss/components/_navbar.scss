@@ -1,0 +1,22 @@
+li.svelte-rbkwku.svelte-rbkwku::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #6262c5;
+    width: 0%;
+    bottom: 30px;
+}
+
+li.svelte-rbkwku.svelte-rbkwku {
+    &:hover::before {
+        width: 100%;
+    }
+}
+
+nav.svelte-rbkwku a.svelte-rbkwku {
+    &:hover {
+        width: 100%;
+        color: #6262c5;
+    }
+}

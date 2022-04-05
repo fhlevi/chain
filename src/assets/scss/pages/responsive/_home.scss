@@ -1,0 +1,64 @@
+@media screen and (max-width: 1199px) {
+    .wrapper-tokenomics {
+        display: grid;
+        grid-template-rows: auto;
+        gap: 2rem;
+        max-height: auto;
+    }
+    .wrapper-tokenomics .tokenomics-image {
+        width: 100%;
+    }
+    .tokenomics-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .wrapper-collection {
+        display: grid;
+        grid-template-rows: auto;
+        gap: 2rem;
+        height: auto;
+
+        .image-review {
+            padding: 0px 2.5rem;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            flex-direction: column;
+            display: flex;
+
+            img {
+                width: 75%;
+                height: 75%;
+            }
+        }
+
+        .image-review-list {
+            display: grid;
+            gap: .25rem;
+            width: 100%;
+            grid-template-rows: repeat(3,minmax(1fr));
+            grid-template-columns: repeat(3,minmax(0,4fr));
+
+            img {
+                max-height: 85px;
+                max-width: 85px;
+                height: 100%;
+            }
+
+            .image-review-item {
+                @each $name, $color in $color-collection-list {
+                    .bg-#{$name} {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding-bottom: 10px;
+                        width: 85px;
+                        background: $color;
+                    }
+                }
+            }
+        }
+    }
+}

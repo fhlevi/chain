@@ -4,7 +4,7 @@
           <banner-home></banner-home>
           <section id="traders" class="column row-desktop svelte-1ykiyx9">
               <div class="column svelte-1ykiyx9">
-                  <h2 class="svelte-1ykiyx9">DI ISI TEXT NANTI</h2>
+                  <h2 class="svelte-1ykiyx9 text-36 font-bold">DI ISI TEXT NANTI</h2>
                   <p class="svelte-1ykiyx9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
@@ -12,9 +12,9 @@
                   <img :src="require('Assets/images/items/test.png')" width="360" class="svelte-1ykiyx9">
               </figure>
           </section>
-          <section id="leagues" class="column row-desktop row-reverse svelte-1ykiyx9">
+          <section id="league" class="column row-desktop row-reverse svelte-1ykiyx9">
               <div class="column svelte-1ykiyx9">
-                  <h2 class="svelte-1ykiyx9">DI ISI TEXT NANTI game</h2>
+                  <h2 class="svelte-1ykiyx9 text-36 font-bold">DI ISI TEXT NANTI game</h2>
                   <p class="svelte-1ykiyx9">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
                   tempor incididunt ut labore et dolore magna aliqua.</p>
               </div>
@@ -33,7 +33,7 @@
 </template>
 
 <script>
-import {scollToElement} from 'Helper/scrollToElement';
+import {smoothScroll} from 'Helper/scrollToElement';
 
 export default {
   name: 'HomeView',
@@ -53,7 +53,7 @@ export default {
       scrollTo() {
         const targetEl = document.querySelector('#traders')
 
-        scollToElement(targetEl, 800)
+        smoothScroll()
       }
   }
 }
