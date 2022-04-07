@@ -1,8 +1,8 @@
 <template>
     <section id="collection" class="column svelte-1ykiyx9">
-        <h1 class="title-info stack parallax-layer svelte-1ykiyx9">
+        <div class="mb-10 stack svelte-1ykiyx9">
             <span class="svelte-1ykiyx9 text-center text-36 font-bold">Gigant Collection</span>
-        </h1>
+        </div>
         <div class="wrapper-collection svelte-1ykiyx9">
             <div class="image-review svelte-1ykiyx9 text-center" id="image-selected">
                 <img :src="require('Assets/images/items/'+itemSelected.images)" :class="{'svelte-1ykiyx9 slide-image': true, 'hide': isHide}" />

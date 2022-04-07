@@ -70,7 +70,19 @@
     --color-purple: #5973fe;
     --color-green: #3fb68b;
     --color-red: #ff5353;
-    --color-yellow: #ffb648
+    --color-yellow: #ffb648;
+    --cyan-100: #b3fff9;
+    --cyan-200: #31f3e3;
+    --cyan-300: #3c6278;
+    --cyan-400: #192b2b;
+    --purple-100: #ffb2fd;
+    --purple-200: #ff58fb;
+    --purple-300: #713771;
+    --purple-400: #2a192d;
+    --blue-100: #7a77fe;
+    --blue-200: #3100f7;
+    --blue-300: #363b69;
+    --blue-400: #1b192b;
 }
 
 *,
@@ -909,17 +921,17 @@ li.svelte-rbkwku.svelte-rbkwku {
     height: 100%
 }
 
-nav.svelte-rbkwku a.svelte-rbkwku {
+nav.svelte-rbkwku div.svelte-rbkwku {
     height: var(--header-height);
     font-weight: 400;
     text-decoration: none
 }
 
-nav.svelte-rbkwku a.svelte-rbkwku:not(:hover):not(.active) {
+nav.svelte-rbkwku div.svelte-rbkwku:not(:hover):not(.active) {
     color: var(--color-text-base)
 }
 
-nav.svelte-rbkwku ul a.svelte-rbkwku {
+nav.svelte-rbkwku ul div.svelte-rbkwku {
     padding: 0 .85rem;
     gap: .66ch;
     justify-content: center
@@ -992,7 +1004,7 @@ a.active.svelte-rbkwku.svelte-rbkwku {
         visibility: visible
     }
 
-    nav.svelte-rbkwku ul a.svelte-rbkwku {
+    nav.svelte-rbkwku ul div.svelte-rbkwku {
         font-size: 2em;
         height: 1.55em;
         font-weight: 700;

@@ -19,31 +19,6 @@
     }
 }
 
-/* team */
-.wrapper-team {
-    display: flex;
-    gap: 25px;
-    overflow-x: auto;
-}
-.item-team {
-    margin: 0px 5px;
-}
-.item-team img {
-    height: 153px;
-    width: 153px;
-    border-radius: 50%;
-}
-.item-team .name {
-    color: #01DE8E;
-    font-size: 16px;
-    margin-top: 25px;
-}
-.item-team .role {
-    font-size: 14px;
-    margin: 0px 5px;
-    margin-top: 15px;
-}
-
 @media screen and (max-width: 768px) {
     .wrapper-team {
         display: flex;

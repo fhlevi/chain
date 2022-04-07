@@ -61,4 +61,11 @@
             }
         }
     }
+
+    .wrapper-about { 
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5rem;
+        height: auto;
+    }
 }

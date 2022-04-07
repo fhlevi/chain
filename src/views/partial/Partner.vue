@@ -1,16 +1,14 @@
 <template>
-    <div>
-        <h1 class="stack parallax-layer svelte-1ykiyx9">
+    <section id="partner" class="svelte-1ykiyx9 column">
+        <h1 class="title-info stack svelte-1ykiyx9">
             <span class="svelte-1ykiyx9 text-center text-36 font-bold">OUR PARTNERS</span>
         </h1>
-        <section id="partner">
-            <div class="wrapper-partner">
-                <div class="image-partner-size" v-for="(data, i) in partnerList" :key="i">
-                    <img :src="require('Assets/images/'+data.icon)" />
-                </div>
+        <div class="wrapper-partner">
+            <div class="image-partner-size" v-for="(data, i) in partnerList" :key="i">
+                <img :src="require('Assets/images/'+data.icon)" />
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 </template>
 
 <script>

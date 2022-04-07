@@ -9,22 +9,22 @@
             <div class="stack">
                 <ul class="navbar column row-tablet svelte-rbkwku ml-20">
                     <li class="svelte-rbkwku nav-link">
-                        <a href="#" class="row svelte-rbkwku nav-link-item">Home </a>
+                        <div class="row svelte-rbkwku nav-link-item">Home </div>
                     </li>
                     <li class="svelte-rbkwku">
-                        <a href="#roadmap" class="row svelte-rbkwku">Roadmap<!-- <span class="tag svelte-rbkwku">Ended</span> --></a>
+                        <div to="#roadmap" class="row svelte-rbkwku">Roadmap<!-- <span class="tag svelte-rbkwku">Ended</span> --></div>
                     </li>
                     <li class="svelte-rbkwku">
-                        <a href="#tokenomics" class="row svelte-rbkwku">Tokenomics</a>
+                        <div href="#tokenomics" class="row svelte-rbkwku">Tokenomics</div>
                     </li>
                     <li class="svelte-rbkwku">
-                        <a href="#team" class="row svelte-rbkwku">Team</a>
+                        <div href="#team" class="row svelte-rbkwku">Team</div>
                     </li>
                     <li class="svelte-rbkwku">
-                        <a href="#" class="row svelte-rbkwku" target="_blank">LitePaper</a>
+                        <div href="#" class="row svelte-rbkwku" target="_blank">LitePaper</div>
                     </li>
                     <li class="svelte-rbkwku">
-                        <a href="#" class="row svelte-rbkwku" target="_blank">About</a>
+                        <div href="#" class="row svelte-rbkwku" target="_blank">About</div>
                     </li>
                 </ul>
             </div>

@@ -14,7 +14,7 @@
         border-radius: 6px;
     }
     
-    .navbar-nav .nav-item a.nav-link {
+    .navbar-nav .nav-item div.nav-link {
         color: #fff;
         margin: 8px 0;
     }
